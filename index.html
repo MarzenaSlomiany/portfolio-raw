@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Marzena Słomiany</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div>
+            <h2>Hi, I'm <span>Marzena</span></h2>
+            <h3>Front-end Developer</h3>
+            <p>I craft beautiful, responsive, and user-friendly web experiences. With a passion for clean code and
+                elegant design, I transform ideas into functional digital solutions that make a difference.</p>
+            <div class="actions">
+                <button>get in touch</button>
+                <button>projects</button>
+            </div>
+        </div>
+        <img src="./assets/images/avatar.png" />
+    </header>
+
+    <section id="about">
+        <h2>About me</h2>
+        <div class="about-content">
+            <div class="bio">
+                <p>I'm a passionate front-end developer who loves bringing creative designs to life through code. With a
+                    strong foundation in modern web technologies, I specialize in creating responsive, accessible, and
+                    performant web applications.</p>
+                <p>My journey in web development started with a curiosity about how websites work, and it has evolved
+                    into a career where I continuously learn and adapt to new technologies. I believe in writing clean,
+                    maintainable code and creating experiences that users love.</p>
+                <a href="#" class="github-link">View my GitHub Profile</a>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>Clean Code Advocate</h3>
+                    <p>I write maintainable, scalable code following industry best practices and modern standards.</p>
+                </div>
+                <div class="card">
+                    <h3>Design-Minded Developer</h3>
+                    <p>I bridge the gap between design and development, ensuring pixel-perfect implementations.</p>
+                </div>
+                <div class="card">
+                    <h3>Continuous Learner</h3>
+                    <p>I stay updated with the latest web technologies and best practices in the industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./assets/images/app-1.png" alt="E-commerce Platform">
+                </div>
+                <div class="project-info">
+                    <p>A modern e-commerce platform built with React and TypeScript, featuring responsive design,
+                        shopping cart functionality, and seamless checkout experience.</p>
+                </div>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>CSS</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./assets/images/app-2.png" alt="Task Manager App">
+                </div>
+                <div class="project-info">
+                    <p>A productivity app for managing tasks and projects with drag-and-drop functionality, priority
+                        levels, and deadline tracking.</p>
+                </div>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>UI/UX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's work together</h3>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                    vision. Feel free to reach out!</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <img src="./assets/icons/mail.svg" alt="Email">
+                        <div>
+                            <span>Email</span>
+                            <a href="mailto:marzena.slomiany@example.com">marzena.slomiany@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <img src="./assets/icons/phone.svg" alt="Phone">
+                        <div>
+                            <span>Phone</span>
+                            <a href="tel:123-456-789">123 - 456 - 789</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <img src="./assets/icons/location.svg" alt="Location">
+                        <div>
+                            <span>Location</span>
+                            <p>Poland</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Marzena Słomiany</h3>
+                <p>Front-End Developer</p>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><img src="./assets/icons/github.svg" alt="GitHub"></a>
+                <a href="#"><img src="./assets/icons/linkedin.svg" alt="LinkedIn"></a>
+                <a href="mailto:marzena.slomiany@example.com"><img src="./assets/icons/mail.svg" alt="Email"></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>made with passion by Marzena Słomiany © 2025</p>
+        </div>
+    </footer>
+</body>
+
+</html>

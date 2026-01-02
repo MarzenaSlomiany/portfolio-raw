@@ -1,0 +1,377 @@
+:root {
+    --color-primary: #4d0011;
+    --color-bg: #ffe4e6;
+    --color-bg-white: #ffffff;
+    --color-card-bg: #ffffff;
+    --color-card-bio: #BD7880;
+    --color-accent: #c25e70;
+}
+
+body {
+    font-family: 'Forum', serif;
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 82px;
+}
+
+nav h1 {
+    font-size: 32px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--color-primary);
+    letter-spacing: 1px;
+}
+
+header {
+    padding: 80px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+header>div {
+    max-width: 50%;
+}
+
+header h2 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+header h2 span {
+    font-weight: 400;
+}
+
+header h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    opacity: 0.9;
+}
+
+header p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+header .actions {
+    display: flex;
+    gap: 24px;
+}
+
+header button {
+    padding: 6px 32px;
+    font-size: 18px;
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    cursor: pointer;
+    box-shadow: 4px 4px 0px rgba(77, 0, 17, 0.2);
+    transition: all 0.2s ease;
+}
+
+header button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px rgba(77, 0, 17, 0.3);
+}
+
+header img {
+    width: 306px;
+    height: 330px;
+}
+
+/* About Section */
+#about {
+    padding: 80px 120px;
+    background-color: var(--color-bg-white);
+}
+
+#about h2 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-content {
+    display: flex;
+    gap: 100px;
+}
+
+.bio {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.bio p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #102B1F;
+}
+
+.github-link {
+    text-align: center;
+    font-size: 20px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card {
+    background-color: var(--color-card-bio);
+    padding: 12px 22px;
+    box-shadow: 4px 4px 0px rgba(77, 0, 17, 0.2);
+    border: 1px solid rgba(77, 0, 17, 0.1);
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 6px;
+    color: #4d0011;
+}
+
+.card h3 p {
+    color: #000000
+}
+
+#projects {
+    padding: 80px 120px;
+    background-color: var(--color-bg);
+}
+
+#projects h2 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--color-primary);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.project-card {
+    background-color: var(--color-card-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    height: 213px;
+    width: 326px;
+}
+
+.project-info {
+    background-color: var(--color-card-bio);
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.project-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #102B1F;
+}
+
+.project-tech {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 120px;
+}
+
+#contact h2 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--color-primary);
+}
+
+.contact-container {
+    display: flex;
+    gap: 80px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: var(--color-primary);
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 400px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.contact-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item span {
+    font-size: 14px;
+    color: #102B1F;
+}
+
+.contact-item a,
+.contact-item p {
+    font-size: 16px;
+    color: var(--color-primary);
+    text-decoration: none;
+    margin: 0;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: #FFD9D9;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: var(--color-primary);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #ebbcbe;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--color-primary);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 238px
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 29px 82px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #FFD9D9;
+    padding-bottom: 40px;
+}
+
+.footer-brand h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.footer-brand p {
+    font-size: 20px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.footer-socials a {
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+    transform: scale(1.1);
+}
+
+.footer-socials img {
+    width: 48px;
+    height: 48px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 20px;
+}
